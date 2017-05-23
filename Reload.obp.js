@@ -12,6 +12,7 @@ exports.onMessageReceived = (function Reload(bot, doc, user, userID, channelID, 
             to: channelID,
             message: "The plugins have been reloaded."
         });
+        var successDate = new Date();
         require('../Onebot.js').loadPlugins();
     }
 
